@@ -39,7 +39,7 @@ useEffect(() => {
 }, [typing])
 
   return (
-    <div className="flex flex-col h-full border-r border-gray-200 bg-white bg-white dark:bg-gray-900 text-black dark:text-white h-full p-4">
+    <div className="flex flex-col  border-r border-gray-200  bg-white dark:bg-gray-900 text-black dark:text-white h-full p-4">
       {/* Header */}
       <div className="flex justify-between items-center px-4 py-3 border-b">
         <h2 className="font-medium text-gray-800">Luis Easton</h2>

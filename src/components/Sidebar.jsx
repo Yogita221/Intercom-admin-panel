@@ -47,7 +47,7 @@ const chats = [
 
 const Sidebar = () => {
   return (
-    <aside className="border-r border-gray-200 dark:border-gray-700 p-4 overflow-y-auto bg-white dark:bg-gray-900 w-full sm:w-64 ">
+    <aside className="border-r border-gray-200 dark:border-gray-700 p-4 overflow-y-auto bg-white dark:bg-gray-900 w-full">
       {/* Inbox Header */}
       <div className="mb-4">
         <h2 className="text-lg font-semibold text-gray-800">Your inbox</h2>
@@ -82,6 +82,10 @@ const Sidebar = () => {
           </motion.li>
         ))}
       </ul>
+
+      
+
+
     </aside>
   );
 };
