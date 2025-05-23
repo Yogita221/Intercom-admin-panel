@@ -2,7 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { Send, Mic } from 'lucide-react';
 import { motion } from 'framer-motion';
 
+
 const AICopilotPanel = () => {
+
+  
+
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState([]);
   const [isListening, setIsListening] = useState(false);
@@ -58,18 +62,21 @@ const AICopilotPanel = () => {
     recognition.start();
   };
 
+  
+
   return (
     <motion.div
       initial={{ opacity: 0, x: 50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.4 }}
-      className="flex flex-col h-full bg-gradient-to-br from-white via-[#f9f9ff] to-[#f6f1ff] dark:from-gray-800 dark:via-gray-900 dark:to-gray-800"
+      className="flex flex-col h-full bg-gradient-to-br from-white via-[#e5e5f7] to-[#3e1f78] dark:from-gray-800 dark:via-gray-900 dark:to-gray-800"
     >
       {/* Header */}
       <div className="flex justify-between items-center px-4 py-3 border-b border-gray-200 dark:border-gray-700">
         <div className="flex space-x-4 text-sm font-medium text-gray-600 dark:text-gray-300">
           <button className="text-black dark:text-white border-b-2 border-black dark:border-white pb-1">AI Copilot</button>
-          <button className="hover:text-black dark:hover:text-white">Details</button>
+           <button className="hover:text-black dark:hover:text-white">Details</button>
+         
         </div>
         <button className="hover:opacity-80">🔳</button>
       </div>
@@ -142,3 +149,5 @@ const AICopilotPanel = () => {
 };
 
 export default AICopilotPanel;
+
+
