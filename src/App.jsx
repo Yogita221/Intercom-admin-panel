@@ -7,6 +7,9 @@ import AICopilotPanel from './components/AICopilotPanel';
 
 
 function App() {
+
+ 
+
   return (
     
       <MainLayout>

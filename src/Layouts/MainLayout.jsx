@@ -1,10 +1,8 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { MoonIcon, SunIcon } from '@heroicons/react/24/solid';
+import { motion } from "framer-motion";
 
-
-const toggleTheme = () => {
-  document.documentElement.classList.toggle("dark");
-};
 
 const MainLayout = ({ children }) => {
    const [selectedChat, setSelectedChat] = useState(null);
@@ -24,17 +22,44 @@ const MainLayout = ({ children }) => {
   });
   
 
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // Apply class to html tag
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', isDarkMode);
+  }, [isDarkMode]);
+
+  const toggleTheme = () => {
+    setIsDarkMode(prev => !prev);
+  };
+
+
   return (
     <div className="h-screen w-screen flex flex-col dark:bg-gray-900 dark:text-white transition-colors duration-300 overflow-hidden">
       {/* Header */}
       <div className="flex justify-between items-center px-6 py-3 border-b dark:border-gray-700 shrink-0">
-        <h1 className="text-lg font-semibold">AI Copilot Messenger</h1>
+       <motion.h1
+  initial={{ opacity: 0, y: -20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6, ease: "easeOut" }}
+  className="text-3xl font-extrabold bg-gradient-to-r from-[#6a11cb] via-[#2575fc] to-[#6dd5ed] text-transparent bg-clip-text drop-shadow-md tracking-wide"
+>
+  AI Copilot Messenger
+</motion.h1>
+      
         <button
-          onClick={toggleTheme}
-          className="text-sm px-3 py-1 border border-blue-200 rounded hover:bg-gray-100 dark:hover:bg-gray-800"
-        >
-          Toggle Theme
-        </button>
+  onClick={toggleTheme}
+  className="relative inline-flex items-center px-4 py-2 bg-gradient-to-r from-indigo-100 via-purple-100 to-pink-100 dark:from-gray-800 dark:to-gray-700 border border-gray-300 dark:border-gray-600 rounded-full shadow-md hover:shadow-lg transition-all duration-300"
+>
+  {isDarkMode ? (
+    <MoonIcon className="w-5 h-5 text-indigo-600 dark:text-yellow-400" />
+  ) : (
+    <SunIcon className="w-5 h-5 text-yellow-400 dark:text-indigo-400" />
+  )}
+  <span className="ml-2 text-sm font-semibold text-gray-800 dark:text-gray-100">
+    {isDarkMode ? 'Dark' : 'Light'} Mode
+  </span>
+</button>
       </div>
 
       {/* Main Content */}
