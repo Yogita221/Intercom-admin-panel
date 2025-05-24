@@ -56,3 +56,40 @@ const MainLayout = ({ children }) => {
 };
 
 export default MainLayout;
+
+
+
+
+
+// import React, { useState } from 'react';
+// import Sidebar from './Sidebar';
+// import ChatWindow from './ChatWindow';
+
+// const MainLayout = () => {
+
+//   const [selectedChat, setSelectedChat] = useState(null);
+
+//   return (
+  
+//     <div className="h-screen flex">
+//       {/* Sidebar */}
+//       <div className="w-full md:w-1/3 lg:w-1/4 border-r border-gray-300 dark:border-gray-700">
+//         <Sidebar selectedChat={selectedChat} onSelectChat={setSelectedChat} />
+//       </div>
+
+//       {/* ChatWindow */}
+//       <div className="hidden md:flex flex-1">
+//         <ChatWindow selectedChat={selectedChat} onClose={() => setSelectedChat(null)} />
+//       </div>
+
+//       {/* Mobile ChatView */}
+//       {selectedChat && (
+//         <div className="md:hidden fixed inset-0 z-50 bg-white dark:bg-gray-900">
+//           <ChatWindow selectedChat={selectedChat} onClose={() => setSelectedChat(null)} />
+//         </div>
+//       )}
+//     </div>
+//   )
+// }
+
+// export default MainLayout

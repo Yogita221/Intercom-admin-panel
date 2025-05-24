@@ -5,12 +5,12 @@ const chats = [
   { id: 1, name: 'Luis - Github', message: 'Hey! I have a question...', time: '45m', unread: false },
   { id: 2, name: 'Ivan - Nike', message: 'Hi there, I have a qu...', time: '30m', unread: true },
   { id: 3, name: 'Lead from New York', message: 'Good morning, let me...', time: '40m', unread: true },
-  { id: 4, name: 'Booking API problems', message: 'Bug report', time: '45m', unread: false },
+  { id: 4, name: 'Booking API problems', message: 'Hey! I have a question...', time: '45m', unread: false },
   { id: 5, name: 'Miracle - Exemplary Bank', message: 'Hey there, I am here to...', time: '45m', unread: false },
-  { id: 6, name: 'Sophia - Travel Agency', message: 'Can you help with booking?', time: '40m', unread: true },
-  { id: 7, name: 'Mark - Tech Support', message: 'System update completed.', time: '45m', unread: false },
+  { id: 6, name: 'Sophia - Travel Agency', message: 'Hey! I have a question...', time: '40m', unread: true },
+  { id: 7, name: 'Mark - Tech Support', message: 'Hi there, I have a qu...', time: '45m', unread: false },
   { id: 8, name: 'Anna - Marketing', message: 'New campaign launch soon!', time: '40m', unread: true },
-  { id: 9, name: 'Customer Service', message: 'Your ticket has been resolved.', time: '45m', unread: false },
+  { id: 9, name: 'Travis - Github', message: 'Hi there, I have a qu...', time: '45m', unread: false },
 ];
 
 const Sidebar = ({ onSelectChat, selectedChatId }) => {
@@ -64,3 +64,4 @@ const Sidebar = ({ onSelectChat, selectedChatId }) => {
 };
 
 export default Sidebar;
+
