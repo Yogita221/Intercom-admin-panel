@@ -24,7 +24,7 @@ const MainLayout = ({ children }) => {
 
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-  // Apply class to html tag
+ 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', isDarkMode);
   }, [isDarkMode]);
@@ -64,7 +64,7 @@ const MainLayout = ({ children }) => {
 
       {/* Main Content */}
       <div className="flex-1 overflow-y-auto md:overflow-hidden">
-        {/* For desktop: 3-column grid. For mobile: stacked flex column */}
+  
         <div className="flex flex-col md:grid md:grid-cols-3 h-full">
           {/* Sidebar */}
           <div className="border-r h-full overflow-y-auto">{sidebarWithProps}</div>
@@ -86,35 +86,3 @@ export default MainLayout;
 
 
 
-// import React, { useState } from 'react';
-// import Sidebar from './Sidebar';
-// import ChatWindow from './ChatWindow';
-
-// const MainLayout = () => {
-
-//   const [selectedChat, setSelectedChat] = useState(null);
-
-//   return (
-  
-//     <div className="h-screen flex">
-//       {/* Sidebar */}
-//       <div className="w-full md:w-1/3 lg:w-1/4 border-r border-gray-300 dark:border-gray-700">
-//         <Sidebar selectedChat={selectedChat} onSelectChat={setSelectedChat} />
-//       </div>
-
-//       {/* ChatWindow */}
-//       <div className="hidden md:flex flex-1">
-//         <ChatWindow selectedChat={selectedChat} onClose={() => setSelectedChat(null)} />
-//       </div>
-
-//       {/* Mobile ChatView */}
-//       {selectedChat && (
-//         <div className="md:hidden fixed inset-0 z-50 bg-white dark:bg-gray-900">
-//           <ChatWindow selectedChat={selectedChat} onClose={() => setSelectedChat(null)} />
-//         </div>
-//       )}
-//     </div>
-//   )
-// }
-
-// export default MainLayout
