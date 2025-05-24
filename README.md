@@ -1,12 +1,36 @@
-# React + Vite
+# 🚀 Intercom Admin Panel
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **modern**, **responsive** admin panel UI inspired by Intercom’s clean and sleek style.  
+Built with **React**, **Tailwind CSS**, and **Framer Motion** for smooth animations. ✨
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 📱 Responsive design for both **desktop and mobile**  
+- 📥 Inbox and 🤖 AI Copilot panels with **smooth animated transitions**  
+- 🎤 Voice input support with cool **typing animation effects**  
+- 🌙 Dark mode toggle for comfortable night-time use   
+- 🎬 Stunning UI animations powered by **Framer Motion**  
+- 🧩 Clean, reusable, and modular React components  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+- ⚛️ React
+- 🎨 Tailwind CSS
+- 🎞️ Framer Motion
+- 🎭 Emojis for UI flair
+
+---
+
+## 🚀 Live Demo
+
+Check out the app live here:  
+[🔗 Live Demo](https://intercom-admin-panel-ecru.vercel.app/)
+
+
+
+
+
